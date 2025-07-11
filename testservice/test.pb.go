@@ -7,11 +7,12 @@
 package testservice
 
 import (
+	reflect "reflect"
+	sync "sync"
+
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -181,21 +182,21 @@ func file_test_proto_rawDescGZIP() []byte {
 
 var file_test_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_test_proto_goTypes = []interface{}{
-	(*PingRequest)(nil),   // 0: mwitkow.testproto.PingRequest
-	(*PingResponse)(nil),  // 1: mwitkow.testproto.PingResponse
+	(*PingRequest)(nil),   // 0: alcarazlm.testproto.PingRequest
+	(*PingResponse)(nil),  // 1: alcarazlm.testproto.PingResponse
 	(*emptypb.Empty)(nil), // 2: google.protobuf.Empty
 }
 var file_test_proto_depIdxs = []int32{
-	2, // 0: mwitkow.testproto.TestService.PingEmpty:input_type -> google.protobuf.Empty
-	0, // 1: mwitkow.testproto.TestService.Ping:input_type -> mwitkow.testproto.PingRequest
-	0, // 2: mwitkow.testproto.TestService.PingError:input_type -> mwitkow.testproto.PingRequest
-	0, // 3: mwitkow.testproto.TestService.PingList:input_type -> mwitkow.testproto.PingRequest
-	0, // 4: mwitkow.testproto.TestService.PingStream:input_type -> mwitkow.testproto.PingRequest
-	1, // 5: mwitkow.testproto.TestService.PingEmpty:output_type -> mwitkow.testproto.PingResponse
-	1, // 6: mwitkow.testproto.TestService.Ping:output_type -> mwitkow.testproto.PingResponse
-	2, // 7: mwitkow.testproto.TestService.PingError:output_type -> google.protobuf.Empty
-	1, // 8: mwitkow.testproto.TestService.PingList:output_type -> mwitkow.testproto.PingResponse
-	1, // 9: mwitkow.testproto.TestService.PingStream:output_type -> mwitkow.testproto.PingResponse
+	2, // 0: alcarazlm.testproto.TestService.PingEmpty:input_type -> google.protobuf.Empty
+	0, // 1: alcarazlm.testproto.TestService.Ping:input_type -> alcarazlm.testproto.PingRequest
+	0, // 2: alcarazlm.testproto.TestService.PingError:input_type -> alcarazlm.testproto.PingRequest
+	0, // 3: alcarazlm.testproto.TestService.PingList:input_type -> alcarazlm.testproto.PingRequest
+	0, // 4: alcarazlm.testproto.TestService.PingStream:input_type -> alcarazlm.testproto.PingRequest
+	1, // 5: alcarazlm.testproto.TestService.PingEmpty:output_type -> alcarazlm.testproto.PingResponse
+	1, // 6: alcarazlm.testproto.TestService.Ping:output_type -> alcarazlm.testproto.PingResponse
+	2, // 7: alcarazlm.testproto.TestService.PingError:output_type -> google.protobuf.Empty
+	1, // 8: alcarazlm.testproto.TestService.PingList:output_type -> alcarazlm.testproto.PingResponse
+	1, // 9: alcarazlm.testproto.TestService.PingStream:output_type -> alcarazlm.testproto.PingResponse
 	5, // [5:10] is the sub-list for method output_type
 	0, // [0:5] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
